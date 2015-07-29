@@ -1,0 +1,63 @@
+<div class="col-md-3 col-md-offset-4 col-sm-6 col-sm-offset-3" style="margin-top:75px;">
+    <div class="row">
+        <div class="center-form panel">
+            <div class="panel-body">
+                <h4 class="text-center">Login</h4>
+                <form method="post" ng-submit="login(loginForm)" name="loginForm">
+                    <!-- <div class="form-group has-feedback">
+                        <input class="form-control input-md" type="text" name="email" ng-model="email" placeholder="Email" required autofocus>
+                        <span class="ion-at form-control-feedback"></span>
+                    </div> -->
+  
+                      <div class="form-group has-feedback" ng-class="{'has-error': loginForm.email.$error.mongoError}">
+                        <input type="text"
+                               class="form-control input-md"
+                               placeholder="Email"
+                               name="email"
+                               ng-model="user.email"
+                               required
+                               autofocus
+                               error-handler>
+                        <p class="help-block"
+                           ng-show="loginForm.email.$error.mongoError">
+                            {{ errors.email }}
+                        </p>
+                    </div>
+
+                   <!--  <div class="form-group has-feedback">
+                        <input class="form-control input-md" type="password" name="password" ng-model="password" placeholder="Password" required>
+                        <span class="ion-key form-control-feedback"></span>
+                    </div> -->
+
+                     <div class="form-group has-feedback" ng-class="{'has-error': loginForm.password.$error.mongoError}">
+                        <input type="password"
+                               class="form-control input-md"
+                               placeholder="Password"
+                               name="password"
+                               ng-model="user.password"
+                               required
+                               error-handler>
+                        <p class="help-block"
+                           ng-show="loginForm.password.$error.mongoError">
+                            {{ errors.password }}
+                        </p>
+                    </div>
+
+                    <div class="form-group has-error">
+                        <p class="help-block">{{ error.other }}</p>
+                    </div>
+
+                    <button type="submit" ng-disabled="loginForm.$invalid" class="btn btn-md btn-block  btn-accent-color">Log in</button>
+                    <br/>
+                    <!-- <p class="text-center">
+                        <a href="#">Forgot your password?</a>
+                    </p> -->
+                    <p class="text-center text-muted">
+                        <small>Don't have an account yet? <a ui-sref="signup">Sign up</a></small>
+                    </p>
+                      
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

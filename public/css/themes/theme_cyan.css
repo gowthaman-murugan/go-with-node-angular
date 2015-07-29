@@ -1,0 +1,46 @@
+.cyan {
+    background-color: #00BBD3;
+}
+
+.cyan .navbar.navbar,
+.cyan .navbar-default.navbar {
+    background: #0097A7 none repeat scroll 0 0;
+}
+
+.cyan .dark-primary-color {
+    background: #0097A7;
+}
+
+.cyan .default-primary-color {
+    background: #00BCD4;
+}
+
+.cyan .light-primary-color {
+    background: #B2EBF2;
+}
+
+.cyan .text-primary-color {
+    color: #FFFFFF;
+}
+
+.cyan .btn-accent-color {
+    background: #00BCD4  none repeat scroll 0 0 !important;
+    color: #FFFFFF !important;
+}
+
+.cyan .primary-text-color {
+    color: #212121;
+}
+
+.cyan .secondary-text-color {
+    color: #727272;
+}
+
+.cyan .divider-color {
+    border-color: #B6B6B6;
+}
+
+.cyan .a.btn-accent-color:hover {
+    background: #00BBD3;
+    color: #FFFFFF;
+}

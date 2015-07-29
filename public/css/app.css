@@ -1,0 +1,24 @@
+a{
+    cursor: pointer;
+}
+
+.navbar.navbar,
+.navbar-default.navbar {
+    margin-bottom: 9px !important
+}
+
+.user-name {
+    display: inline-block !important;
+    margin-left: 0px;
+    padding-left: 0px !important;
+    cursor: pointer;
+}
+
+.nav-user-photo {
+    margin: -4px 8px 0 0;
+    border-radius: 100%;
+    border: 2px solid #FFF;
+    max-width: 40px;
+}
+ 
+ 

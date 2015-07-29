@@ -1,0 +1,41 @@
+.teal {
+    background-color: #009587;
+}
+
+.teal .navbar.navbar,
+.navbar-default.navbar {
+    background: #00786A none repeat scroll 0 0;
+}
+
+.teal .dark-primary-color {
+    background: #00796B;
+}
+
+.teal .default-primary-color {
+    background: #009688;
+}
+
+.teal .light-primary-color {
+    background: #B2DFDB;
+}
+
+.teal .text-primary-color {
+    color: #FFFFFF;
+}
+
+.teal .btn-accent-color {
+    background: #009688 !important;
+    color: #FFFFFF !important;
+}
+
+.teal .primary-text-color {
+    color: #212121;
+}
+
+.teal .secondary-text-color {
+    color: #727272;
+}
+
+.teal .divider-color {
+    border-color: #B6B6B6;
+}

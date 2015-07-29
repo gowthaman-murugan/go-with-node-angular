@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+{% include './includes/head.html' %}
+<body ng-class="myTheme">
+    <div class="page-wrapper">
+        <div ng-include="" src="'partials/navbar.html'"></div>
+        <div class="container-fluid">
+            <div ui-view></div>
+        </div>
+    </div>
+    {% include './includes/foot.html' %}
+</body>
+
+</html>

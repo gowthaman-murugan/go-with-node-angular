@@ -1,0 +1,43 @@
+.blue {
+    background-color: #2095F2;
+}
+
+.blue .navbar.navbar,
+.blue .navbar-default.navbar {
+    background: #1875D1 none repeat scroll 0 0;
+}
+
+.blue .dark-primary-color {
+    background: #1976D2;
+}
+
+.blue .default-primary-color {
+    background: #2196F3;
+}
+
+.blue .light-primary-color {
+    background: #BBDEFB;
+}
+
+.blue .text-primary-color {
+    color: #FFFFFF;
+}
+
+.blue .btn-accent-color {
+    background: #448AFF !important;
+    color: #FFFFFF !important;
+}
+
+.blue .primary-text-color {
+    color: #212121;
+}
+
+.blue .secondary-text-color {
+    color: #727272;
+}
+
+.blue .divider-color {
+    border-color: #B6B6B6;
+}
+
+ 

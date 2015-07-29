@@ -1,0 +1,66 @@
+<div class="well bs-component col-md-10 col-md-offset-1 article-content" style="margin-top: 20px;">
+ <div ng-show="msg" class="alert alert-dismissable" ng-class="msg.css">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    {{msg.message}}
+</div>
+ 
+
+    <h2 class="col-md-offset-1">Article</h2>
+    <form class="form-horizontal col-md-8 col-md-offset-1 padding-t-10" role="form" name="articleForm" ng-submit="saveOrUpdate(articleForm)" >
+        <div class="form-group padding-b-10"  ng-class="{
+                     'has-warning': articleForm.title.$dirty,
+                     'has-success': articleForm.title.$valid && articleForm.title.$dirty && !articleForm.title.$error.mongoError,
+                     'has-error': articleForm.title.$invalid && articleForm.title.$dirty || articleForm.title.$error.mongoError
+                     }">
+
+            <label class="control-label col-sm-2" for="Title">Title</label>
+            <div class="col-sm-10">
+                 <input class="form-control"
+                           placeholder="Enter Title"
+                           type="text"
+                           name="title"
+                           ng-model="article.title"
+                           required
+                           error-handler/>
+                           <p class="help-block"
+                       ng-show="articleForm.title.$error.unique && form.title">
+                        That name is already taken.
+                    </p>
+                    <p class="help-block"
+                       ng-show="form.password.$error.mongoError">
+                        {{ errors.title }}
+                    </p>
+
+            </div>
+        </div>
+        <div class="form-group padding-b-10" ng-class="{
+                     'has-warning': articleForm.description.$dirty,
+                     'has-success': articleForm.description.$valid && articleForm.description.$dirty && !articleForm.description.$error.mongoError,
+                     'has-error': articleForm.description.$invalid && articleForm.description.$dirty || articleForm.description.$error.mongoError
+                     }">
+            <label class="col-sm-2 control-label" for="textArea">Description</label>
+            <div class="col-sm-10">
+ 
+                <textarea class="form-control"
+                           placeholder="Enter Description"
+                           name="description"
+                           ng-model="article.description"
+                           required
+                           error-handler ></textarea>
+
+                    <p class="help-block"
+                       ng-show="form.password.$error.mongoError">
+                        {{ errors.description }}
+                    </p>
+            </div>
+        </div>
+        <div class="form-group has-error">
+            <p class="help-block">{{ error.other }}</p>
+        </div>
+        <button type="submit" ng-disabled="articleForm.$invalid" class="btn btn-md btn-accent-color">Submit</button>
+        <br/>
+    </form>
+</div>
+
+
+ 

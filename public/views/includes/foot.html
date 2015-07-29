@@ -1,0 +1,17 @@
+ 
+{% if (process.env.NODE_ENV == 'production') %}
+	 <script type="text/javascript" src="js/build/dest.min.js"></script>
+	<script type="text/javascript" src="js/build/app.min.js"></script>
+	<script type="text/javascript" src="templates.js"></script>  
+{% endif %}
+
+{% if (process.env.NODE_ENV == 'development') %}
+
+	{% for file in assets.core.js %}
+	<script type="text/javascript" src="{{file}}"></script>
+	{% endfor %}
+	{% for file in assets.main.js %}
+	<script type="text/javascript" src="{{file}}"></script>
+	{% endfor %}
+
+{% endif %}

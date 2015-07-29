@@ -1,0 +1,36 @@
+<div ng-controller="NavbarCtrl" ng-cloak class="navbar navbar-default fixed" role="navigation" ng-show="currentUser">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="articles">
+                  Go with Node Angular</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle user-name" data-toggle="dropdown">
+                       Theme<b class="caret"></b>
+                    
+                </a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="(key, val) in availableThemes"><a ng-click="newTheme(val)">{{key}}</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <img class="nav-user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                    <a class="dropdown-toggle user-name" data-toggle="dropdown">
+                {{currentUser.name}} <b class="caret"></b>
+                    
+                </a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref="login" ng-click="logout()">Sign out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

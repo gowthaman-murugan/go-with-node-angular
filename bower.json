@@ -1,0 +1,24 @@
+{
+  "name": "go-with-node-angular",
+  "version": "0.0.1",
+  "authors": "gowthaman@ideas2it.com",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "components-font-awesome": "~4.3.0",
+    "angular": "~1.4.1",
+    "angular-route": "~1.4.1",
+    "angular-resource": "~1.4.1",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap-material-design": "~0.3.0",
+     "angular-datatables": "~0.4.3",
+    "angular-cookies": "~1.4.3"
+  }
+}

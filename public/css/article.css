@@ -1,0 +1,14 @@
+table.article-table tbody tr .article-table-row {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+tr.btn-accent-color th{
+    border-bottom: none !important;
+}
+
+.article-content h3 {
+    display: inline-block;
+}
+ 
+ 

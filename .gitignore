@@ -1,0 +1,17 @@
+
+Go-With-Node-Angular/node_modules/*
+node_modules/*
+npm-debug.log
+Go-With-Node-Angular/npm-debug.log
+Go-With-Node-Angular/public/bower_components/*
+Go-With-Node-Angular/bin/.DS_Store
+Go-With-Node-Angular/server/routes/.DS_Store
+Go-With-Node-Angular/server/models/.DS_Store
+Go-With-Node-Angular/.project
+Go-With-Node-Angular/public/css/build/
+Go-With-Node-Angular/public/js/build/
+Go-With-Node-Angular/public/templates.js
+ 
+ 
+ 
+

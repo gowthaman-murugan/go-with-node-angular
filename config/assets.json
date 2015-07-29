@@ -1,0 +1,54 @@
+ {
+     "core": {
+         "css": {
+             "dest": "public/css/build/",
+             "src": [
+                 "public/bower_components/bootstrap/dist/css/bootstrap.min.css",
+                 "public/bower_components/bootstrap-material-design/dist/css/ripples.min.css",
+                 "public/bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css",
+                 "public/bower_components/datatables/media/css/jquery.dataTables.css"
+             ]
+         },
+         "js": {
+             "dest": "public/js/build/",
+             "src": [
+                 "public/bower_components/jquery/dist/jquery.min.js",
+                 "public/bower_components/bootstrap/dist/js/bootstrap.min.js",
+                 "public/bower_components/jquery.slimscroll/jquery.slimscroll.min.js",
+                 "public/bower_components/datatables/media/js/jquery.dataTables.js",
+                 "public/bower_components/underscore/underscore-min.js",
+                 "public/bower_components/angular/angular.min.js",
+                 "public/bower_components/angular-ui-router/release/angular-ui-router.min.js",
+                 "public/bower_components/angular-datatables/dist/angular-datatables.js",
+                 "public/bower_components/angular-resource/angular-resource.min.js",
+                 "public/bower_components/angular-cookies/angular-cookies.js",
+                 "public/bower_components/bootstrap-material-design/dist/js/ripples.min.js",
+                 "public/bower_components/bootstrap-material-design/dist/js/material.min.js"
+             ]
+         }
+     },
+     "main": {
+         "css": {
+             "dest": "public/css/build/",
+             "src": [
+                 "public/css/app.css",
+                 "public/css/article.css"
+             ]
+         },
+         "js": {
+            "dest": "public/js/build/",
+             "src": [
+                 "public/js/core/app.js",
+                 "public/js/core/controllers/navbar.controller.js",
+                 "public/js/core/controllers/auth.controller.js",
+                 "public/js/core/controllers/article.controller.js",
+                 "public/js/core/services/article.service.js",
+                 "public/js/core/services/auth.service.js",
+                 "public/js/core/services/user.service.js",
+                 "public/js/core/services/session.service.js",
+                 "public/js/core/directives/onFocus.directive.js",
+                 "public/js/core/directives/error.directive.js"
+              ]
+         }
+     }
+ }

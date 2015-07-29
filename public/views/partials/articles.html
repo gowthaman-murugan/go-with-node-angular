@@ -1,0 +1,25 @@
+<div class="well bs-component col-md-10 col-md-offset-1 article-content"  style="margin-top: 20px;">
+    <table datatable="ng" dt-options="dtOptions" dt-column-defs="dtColumnDefs" class="row-border hover article-table">
+        <thead>
+            <tr>
+                <h3>Articles</h3>
+                <a ui-sref="newArticle" class="btn btn-sm  btn-accent-color pull-right">ADD</a>
+            </tr>
+            <tr class="btn-accent-color">
+                <th>Title</th>
+                <th>Description</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="article in articles">
+                <td class="article-table-row">{{ article.title }}</td>
+                <td class="article-table-row">{{ article.description}}</td>
+                <td class="article-table-row">
+                    <a ui-sref="editArticle({id:article._id})" class="btn btn-xs btn-accent-color"><i class="fa fa-edit"></i>
+                </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
