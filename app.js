@@ -20,7 +20,12 @@ var VIEWS_DIR = __dirname + '/public/views';
 var app = express();
 
 require('./config/passport')(passport)
+
 mongoose.connect(config.db);
+
+mongoose.connection.once('connected', function() {
+ console.log(".....DB CONNECTED....");
+})
 
 // Only use logger for development environment
 if (process.env.NODE_ENV === 'development') {
@@ -45,10 +50,11 @@ app.use(bodyParser.urlencoded({
 app.use(session({
     secret: 'Workbo@r$',
     name: 'WB',
-    store: new mongoStore({
-        db: config.db,
-        collection: 'sessions'
-    }), // connect-mongo session store
+    store: new mongoStore({ mongooseConnection: mongoose.connection}),
+    // store: new mongoStore({
+    //     db: config.db,
+    //     collection: 'sessions'
+    // }), // connect-mongo session store
     resave: true,
     saveUninitialized: true
 }));
