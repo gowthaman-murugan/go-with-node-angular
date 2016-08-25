@@ -1,59 +1,60 @@
 {
-    "name": "go-with-node-angular",
-    "version": "1.0.0",
-    "description": "simple node js application with 1.angularjs 2.nodejs 3.express  4.passport authentication 5.gulp",
-    "scripts": {
-        "start": "node ./bin/www",
-        "gulp": "gulp"
-    },
-    "main": "./bin/www",
-    "engines": {
-        "node": "0.10.x"
-    },
-    "keywords": [
-        "angularjs passport",
-        "example  node js applicaton",
-        "example  angular js application ",
-        "node passport",
-        "angularjs",
-        "nodejs",
-        "simple",
-        "web applicaton using nodejs",
-        "gulp",
-        "node mvc",
-        "passport example"
-    ],
-    "author": "gowthaman@ideas2it.com",
-    "dependencies": {
-        "assetmanager": "^1.2.2",
-        "body-parser": "~1.0.0",
-        "compression": "^1.5.1",
-        "connect-mongo": "^0.8.2",
-        "express": "~4.2.0",
-        "express-session": "^1.11.3",
-        "mongoose": "^4.0.8",
-        "morgan": "^1.6.1",
-        "node-rest-client": "^1.5.1",
-        "passport": "^0.2.2",
-        "passport-local": "^1.0.0",
-        "swig": "^1.4.2",
-        "underscore": "^1.8.3"
-    },
-    "devDependencies": {
-        "gulp": "^3.9.0",
-        "gulp-angular-templatecache": "^1.7.0",
-        "gulp-cache": "^0.2.10",
-        "gulp-clean": "^0.3.1",
-        "gulp-concat": "^2.6.0",
-        "gulp-csslint": "^0.1.5",
-        "gulp-cssmin": "^0.1.7",
-        "gulp-imagemin": "^2.3.0",
-        "gulp-jshint": "^1.11.2",
-        "gulp-ng-annotate": "^1.0.0",
-        "gulp-rename": "^1.2.2",
-        "gulp-uglify": "^1.2.0",
-        "gulp-watch": "^4.3.3",
-        "in": "^0.3.0"
-    }
-
+  "name": "go-with-node-angular",
+  "version": "1.0.0",
+  "description": "simple node js application with 1.angularjs 2.nodejs 3.express  4.passport authentication 5.gulp",
+  "scripts": {
+    "start": "node ./bin/www",
+    "gulp": "gulp"
+  },
+  "main": "./bin/www",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "keywords": [
+    "angularjs passport",
+    "example  node js applicaton",
+    "example  angular js application ",
+    "node passport",
+    "angularjs",
+    "nodejs",
+    "simple",
+    "web applicaton using nodejs",
+    "gulp",
+    "node mvc",
+    "passport example"
+  ],
+  "author": "gowthaman@ideas2it.com",
+  "dependencies": {
+    "assetmanager": "^1.2.2",
+    "body-parser": "~1.0.0",
+    "compression": "^1.5.1",
+    "connect-mongo": "^0.8.2",
+    "express": "~4.2.0",
+    "express-session": "^1.11.3",
+    "mongoose": "^4.0.8",
+    "morgan": "^1.6.1",
+    "node-rest-client": "^1.5.1",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0",
+    "swig": "^1.4.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.7.0",
+    "gulp-cache": "^0.2.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-csslint": "^0.1.5",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-ng-annotate": "^1.0.0",
+    "gulp-ng-html2js": "^0.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.3.3",
+    "in": "^0.3.0"
+  }
 }

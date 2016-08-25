@@ -8,6 +8,8 @@ var rename = require('gulp-rename');
 var jshint = require('gulp-jshint');
 var csslint = require('gulp-csslint');
 var cache = require('gulp-cache');
+var ngHtml2Js = require("gulp-ng-html2js");
+var minifyHtml = require("gulp-minify-html");
 //var livereload = require('gulp-livereload');
 var imagemin = require('gulp-imagemin');
 var _ = require('underscore');
@@ -128,12 +130,28 @@ gulp.task('assetsJsMin', function() {
 gulp.task('templates', function() {
     gulp.src(htmlPath + '/*.html')
         .pipe(templateCache({
-            root: 'partials',
-            module: 'workboardApp'
+            root: 'partials/',
+            module: 'app'
         }))
         .pipe(gulp.dest(dirPath));
 });
 
+gulp.task('htmlTemplates', function() {
+gulp.src(htmlPath + '/*.html')
+    .pipe(minifyHtml({
+        empty: true,
+        spare: true,
+        quotes: true
+    }))
+    .pipe(ngHtml2Js({
+        moduleName: "app",
+        prefix: "partials/"
+    }))
+    .pipe(concat("partials.min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest(main.css.dest));
+
+});
 
 gulp.task('watch', function() {
     gulp.watch('public/css/*.css', ['cssmin']);
@@ -145,7 +163,7 @@ gulp.task('watch', function() {
 if (process.env.NODE_ENV === 'production') {
     gulp.task('default', ['clean', 'assetsCssMin', 'assetsJsMin', 'cssmin', 'themes','jsmin', 'templates']);
 } else {
-    gulp.task('default', ['clean', 'cssLint', 'jsHint']);
-       //gulp.task('default', ['clean', 'assetsCssMin', 'assetsJsMin', 'cssmin', 'themes','jsmin', 'templates']);
+   // gulp.task('default', ['clean', 'cssLint', 'jsHint']);
+    gulp.task('default', ['clean', 'assetsCssMin', 'assetsJsMin', 'cssmin', 'themes','jsmin', 'templates', 'htmlTemplates']);
 
 }
